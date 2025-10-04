@@ -1,0 +1,19 @@
+# Spring Boot Project Configuration
+
+LINEAR_TEAM="YourTeam"
+LINEAR_PROJECT="API"
+
+PROJECT_TYPE="spring"
+LANGUAGE="java"
+
+TEST_COMMAND="./mvnw test"
+BUILD_COMMAND="./mvnw package"
+LINT_COMMAND="./mvnw checkstyle:check"
+
+ENV_FILE=".env"
+
+CLAUDE_WORKFLOW_CUSTOM="
+- Maven 빌드 검증
+- JUnit 테스트 실행
+- Checkstyle 검사
+"

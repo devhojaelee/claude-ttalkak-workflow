@@ -28,7 +28,7 @@
 
 ```bash
 cd your-project
-git submodule add https://github.com/yourusername/claude-workflow .claude-core
+git submodule add https://github.com/devhojaelee/claude-ttalkak-workflow .claude-core
 git submodule update --init --recursive
 ```
 
@@ -308,7 +308,7 @@ LINT_COMMAND="flake8 ."
 
 ```bash
 # 1. Submodule 추가
-git submodule add https://github.com/yourusername/claude-workflow .claude-core
+git submodule add https://github.com/devhojaelee/claude-ttalkak-workflow .claude-core
 
 # 2. Flask 템플릿 복사
 cp .claude-core/templates/.claude-config.flask .claude-config

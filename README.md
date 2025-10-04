@@ -28,7 +28,7 @@
 
 ```bash
 cd your-project
-git submodule add https://github.com/devhojaelee/claude-ttalkak-workflow .claude-core
+git submodule add https://github.com/devhojaelee/claude-ttalkak claude-ttalkak
 git submodule update --init --recursive
 ```
 
@@ -38,13 +38,13 @@ git submodule update --init --recursive
 
 ```bash
 # 프레임워크별 템플릿 선택
-cp .claude-core/templates/.claude-config.flask .claude-config    # Flask
+cp claude-ttalkak/templates/.claude-config.flask .claude-config    # Flask
 # or
-cp .claude-core/templates/.claude-config.nextjs .claude-config   # Next.js
+cp claude-ttalkak/templates/.claude-config.nextjs .claude-config   # Next.js
 # or
-cp .claude-core/templates/.claude-config.spring .claude-config   # Spring Boot
+cp claude-ttalkak/templates/.claude-config.spring .claude-config   # Spring Boot
 # or
-cp .claude-core/templates/.claude-config.example .claude-config  # Custom
+cp claude-ttalkak/templates/.claude-config.example .claude-config  # Custom
 ```
 
 ### 3. 설정 파일 편집
@@ -94,10 +94,10 @@ Parent Issue: 100P-123 "이메일 인증 시스템"
 
 ```bash
 # Parent Issue ID를 인자로 스크립트 실행
-./.claude-core/scripts/2-ttalkak.sh 100P-123
+./claude-ttalkak/scripts/2-ttalkak.sh 100P-123
 
 # 또는 특정 base 브랜치 지정
-./.claude-core/scripts/2-ttalkak.sh 100P-123 develop
+./claude-ttalkak/scripts/2-ttalkak.sh 100P-123 develop
 ```
 
 실행 결과:
